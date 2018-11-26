@@ -24,7 +24,8 @@ body {
 }
 
 .pages {
-  width: 300px;
+  min-width: 308px;
+  width: 308px;
   padding: 10px 0;
   border-right: 2px solid #616161;
 
@@ -67,6 +68,8 @@ body {
         letter-spacing: 1.5px;
         text-transform: uppercase;
         border: 0;
+        background: none;
+        cursor: pointer;
       }
 
       .actions {

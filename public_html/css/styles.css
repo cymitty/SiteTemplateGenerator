@@ -16,7 +16,8 @@ body {
   flex-direction: row; }
 
 .pages {
-  width: 300px;
+  min-width: 308px;
+  width: 308px;
   padding: 10px 0;
   border-right: 2px solid #616161; }
   .pages > div {
@@ -43,7 +44,9 @@ body {
       font-size: 15px;
       letter-spacing: 1.5px;
       text-transform: uppercase;
-      border: 0; }
+      border: 0;
+      background: none;
+      cursor: pointer; }
     .pages .structure .page .actions {
       display: flex;
       flex: 1 0 auto;

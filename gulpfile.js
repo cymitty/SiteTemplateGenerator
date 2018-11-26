@@ -30,7 +30,7 @@ gulp.task('browserSync', function() {
     server: {
       baseDir: "./public_html/"
     },
-    port: 8080,
+    port: 8081,
     open: true,
     notify: false
   });
