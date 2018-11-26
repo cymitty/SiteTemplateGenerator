@@ -1,0 +1,238 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+
+  margin: 0;
+}
+
+.generator {
+  display: flex;
+  flex-direction: row;
+}
+
+.pages {
+  width: 300px;
+  padding: 10px 0;
+  border-right: 2px solid #616161;
+
+  >div {
+    //width: 300px;
+    min-height: 400px;
+    padding: 5px 10px;
+  }
+
+  .structure {
+
+    >.title {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+
+    .page {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 15px 0;
+      padding: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+      &:hover {
+        .new-subpage {
+          display: block;
+        }
+      }
+
+      .title {
+        width: 74%;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+      }
+
+      input {
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        border: 0;
+      }
+
+      .actions {
+        display: flex;
+        flex: 1 0 auto;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 5px;
+
+        .add {
+          width: 16px;
+          height: 16px;
+          cursor: pointer;
+
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+
+        .change {
+          width: 16px;
+          height: 16px;
+          cursor: pointer;
+
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+
+        .remove {
+          width: 16px;
+          height: 16px;
+          cursor: pointer;
+          margin-left: 8px;
+
+          img {
+            max-width: 100%;
+            height: auto;
+          }
+        }
+      }
+      
+      .subpages {
+        margin: 0 3px 0 7px;
+        padding-left: 4px;
+        border-left: 2px dotted #cecece;
+        //border-bottom: 1px dotted #cecece;
+
+        .page {
+          box-shadow: none;
+        }
+      }
+    }
+
+    .new-page {
+
+      .new-page-button {
+        border: none;
+        width: 100%;
+        margin: 15px 0;
+        padding: 5px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        text-transform: uppercase;
+        background-color: #77CCA4;
+        cursor: pointer;
+
+        .plus {
+          width: 20px;
+          height: 20px;
+          margin: 0 auto;
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .new-subpage {
+      display: none;
+
+      .new-subpage-button {
+        border: none;
+        width: 100%;
+        margin: 15px 0;
+        padding: 5px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+        text-transform: uppercase;
+        background-color: #77CCA4;
+        cursor: pointer;
+
+        .plus {
+          width: 20px;
+          height: 20px;
+          margin: 0 auto;
+
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+    
+    .subpages {
+
+      &:first-child {
+
+      }
+      .page {
+        margin: 5px 0;
+
+        .title {
+          width: 80%;
+          padding-right: 10px;
+
+        }
+
+        input {
+
+          font-size: 13px;
+        }
+        .actions {
+          justify-content: flex-start;
+        }
+      }
+    }
+  }
+}
+
+.page-design-area {
+  flex: 1 0 auto;
+  padding: 10px 0;
+
+  >.title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+}
+
+.elements {
+  width: 300px;
+  padding: 10px 0;
+  border-left: 2px solid #616161;
+
+  .element {
+    cursor: move;
+  }
+
+  .elements-block {
+
+    >.title {
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 18px;
+    }
+  }
+
+  .rectangle-element {
+    display: block;
+    width: 100px;
+    height: 50px;
+    border: 2px solid #cecece;
+  }
+
+}
+
