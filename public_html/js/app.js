@@ -179,7 +179,27 @@ var structureListElementRemove = structureList.getElementsByClassName('remove');
   });
 });
 
+blockElements = document.querySelectorAll('.element');
+
+
+blockElements.forEach(function (element) {
+  element.addEventListener('click', function () {
+    thisClone = element.cloneNode();
+    newClass = 'element'+(Math.floor(Math.random() * 10000)).toString();
+    thisClone.classList.add(newClass);
+
+    $( thisClone ).draggable({ containment: ".page-design-area", scroll: false });
+    $( thisClone ).resizable();
+
+    //Нужно добавлять в нужную страницу а не в общую
+    pageDesignArea = document.querySelector('.page-design-area');
+    pageDesignArea.appendChild(thisClone);
+
+
+  });
+});
+
 $( function() {
-  $( "#draggable" ).draggable();
-  $( ".resizable" ).resizable();
+  // $( "#draggable1,#draggable2,#draggable3,#draggable4,#draggable5,#draggable6" ).draggable();
+  // $( ".resizable" ).resizable();
 } );
